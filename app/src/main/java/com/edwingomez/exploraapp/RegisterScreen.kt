@@ -31,7 +31,8 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import me.fabiansuarez.exploracolombia.ui.theme.ExploraColombiaTheme
+import com.edwingomez.exploraapp.ui.theme.ExploraAppTheme
+
 
 @Composable
 fun RegisterScreen(
@@ -69,7 +70,7 @@ fun RegisterScreen(
             ) {
                 Icon(
                     imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                    contentDescription = stringResource(id = R.string.back_button),
+                    contentDescription = null,
                     tint = primaryOrange
                 )
             }
@@ -300,7 +301,7 @@ fun RegisterField(
 @Preview(showBackground = true)
 @Composable
 fun RegisterScreenPreview() {
-    ExploraColombiaTheme {
+    ExploraAppTheme() {
         RegisterScreen(onRegisterSuccess = {}, onNavigateToLogin = {})
     }
 }

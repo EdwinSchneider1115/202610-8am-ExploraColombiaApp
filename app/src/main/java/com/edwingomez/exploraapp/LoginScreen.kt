@@ -3,9 +3,11 @@ package me.fabiansuarez.exploracolombia
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.Email
@@ -24,12 +26,14 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import me.fabiansuarez.exploracolombia.ui.theme.ExploraColombiaTheme
+import com.edwingomez.exploraapp.ui.theme.ExploraAppTheme
+
 
 @Composable
 fun LoginScreen(
     onLoginSuccess: () -> Unit,
     onNavigateToRegister: () -> Unit
+
 ) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
@@ -45,7 +49,8 @@ fun LoginScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(bottom = 24.dp),
+                .padding(bottom = 24.dp)
+                .verticalScroll(rememberScrollState()),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             // Header Image with Rounded Corners
@@ -278,7 +283,9 @@ fun SocialButton(text: String, modifier: Modifier = Modifier, icon: androidx.com
 @Preview(showBackground = true)
 @Composable
 fun LoginScreenPreview() {
-    ExploraColombiaTheme {
-        LoginScreen(onLoginSuccess = {}, onNavigateToRegister = {})
+    ExploraAppTheme {
+        LoginScreen(onLoginSuccess = {}, onNavigateToRegister = {}) {
+
+        }
     }
 }
