@@ -284,8 +284,7 @@ fun SocialButton(text: String, modifier: Modifier = Modifier, icon: androidx.com
 @Composable
 fun LoginScreenPreview() {
     ExploraAppTheme {
-        LoginScreen(onLoginSuccess = {}, onNavigateToRegister = {}) {
+        LoginScreen(onLoginSuccess = {}, onNavigateToRegister = {})
 
-        }
     }
 }
