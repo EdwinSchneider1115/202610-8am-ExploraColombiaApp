@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135608358820",
+    "project_id": "edwin1-1147a",
+    "storage_bucket": "edwin1-1147a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135608358820:android:8e07fab605ec610e399331",
+        "android_client_info": {
+          "package_name": "com.edwingomez.exploraapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk1iYSjSmopvygV8xRxPGidC50JDATDtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
