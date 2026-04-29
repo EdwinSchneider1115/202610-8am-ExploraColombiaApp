@@ -1,4 +1,4 @@
-package me.fabiansuarez.exploracolombia
+package com.edwingomez.exploraapp.ui.elements
 
 import android.app.Activity
 import androidx.compose.foundation.background
@@ -33,7 +33,6 @@ import com.google.firebase.auth.FirebaseAuthInvalidUserException
 import com.google.firebase.auth.auth
 import com.edwingomez.exploraapp.ui.theme.ExploraAppTheme
 import com.edwingomez.exploraapp.validateEmail
-import com.edwingomez.exploraapp.validateName
 import com.edwingomez.exploraapp.validatePassword
 
 @Composable

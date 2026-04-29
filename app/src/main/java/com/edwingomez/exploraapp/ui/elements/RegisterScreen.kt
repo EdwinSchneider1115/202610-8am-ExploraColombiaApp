@@ -1,4 +1,4 @@
-package me.fabiansuarez.exploracolombia
+package com.edwingomez.exploraapp.ui.elements
 
 
 import androidx.compose.foundation.background
